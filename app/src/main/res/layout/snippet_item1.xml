@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="Петро Пункович"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вхідний"
+        android:id="@+id/textViewState"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13:12"
+        android:id="@+id/textViewTime"
+        android:layout_alignTop="@+id/textViewState"
+        android:layout_toRightOf="@+id/textViewState"
+        android:layout_toEndOf="@+id/textViewState"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

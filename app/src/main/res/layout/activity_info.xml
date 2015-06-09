@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.stfalcon.call.ui.InfoActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="Вася Пупкін"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вхідний дзвінок"
+        android:textSize="18dp"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13:25"
+        android:textSize="18dp"
+        android:layout_below="@+id/textViewState"
+        android:layout_alignLeft="@+id/textViewState"
+        android:layout_alignStart="@+id/textViewState" />
+
+    <TextView
+        android:id="@+id/textViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Домовився чи не домовився"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

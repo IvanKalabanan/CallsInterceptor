@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:baselineAligned="false" android:background="#87CEFA"
+    android:id="@+id/MainLinear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewName"
+            android:text="Вася Пупкін"
+            android:textColor="#000000" android:textSize="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Вхідний"
+            android:id="@+id/textViewState" android:textColor="#000000" android:textSize="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignLeft="@+id/textViewName"
+            android:layout_alignStart="@+id/textViewName" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="13:49"
+            android:id="@+id/textViewTime" android:textColor="#000000" android:textSize="12dp"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignLeft="@+id/textViewName"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Опис розмови:"
+            android:textColor="#000000" android:textSize="22dp"
+            android:id="@+id/textView"
+            android:layout_below="@+id/textViewState"
+            android:layout_alignLeft="@+id/textViewState"
+            android:layout_alignStart="@+id/textViewState" />
+    
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:id="@+id/editText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Відміна"
+            android:id="@+id/buttonClose" android:layout_weight="0"
+            android:layout_alignBottom="@+id/buttonOk"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОК"
+            android:id="@+id/buttonOk" android:layout_weight="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/editText"
+            android:layout_toRightOf="@+id/textViewName"
+            android:layout_toEndOf="@+id/textViewName" />
+
+</RelativeLayout>
